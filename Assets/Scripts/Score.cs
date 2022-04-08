@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Score : MonoBehaviour
 {
     [SerializeField] private TMP_Text _textScore; 
@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     [SerializeField] private int _finishScore = 60; 
 
     private int _currentScore = 0;
-    private int _counterScore = 0; 
+    private int _counterScore = 0;
 
     public void UpdateScore(int score)
     {

@@ -147,8 +147,7 @@ GameObject:
   - component: {fileID: 882275874102559568}
   - component: {fileID: 882275874102559583}
   - component: {fileID: 646071524}
-  - component: {fileID: 882275874102559582}
-  - component: {fileID: 646071525}
+  - component: {fileID: -4439029079316767013}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -276,20 +275,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 646071525}
-        m_TargetAssemblyTypeName: StateCube, Assembly-CSharp
-        m_MethodName: ClickCube
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &882275874102559582
+      m_Calls: []
+--- !u!114 &-4439029079316767013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,27 +285,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 882275874102559581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09436f5aa967dc34f9254fd72e491daf, type: 3}
+  m_Script: {fileID: 11500000, guid: 81d637d547ceed341bd6046566cdaa31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minValue: 1
-  _maxValue: 11
---- !u!114 &646071525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882275874102559581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb9c05e140fb90f4c9c14506cfc40054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _textValue: {fileID: 882275873811261069}
   _green: {fileID: 2100000, guid: 7a1475bb2cd3a914e82efdf581c2468b, type: 2}
   _red: {fileID: 2100000, guid: 19a84abc3e49f1a48bf4a3fa4b07df11, type: 2}
   _render: {fileID: 882275874102559568}
-  _valueCube: {fileID: 882275874102559582}
+  _buttonClick: {fileID: 646071524}
 --- !u!1 &882275874346517200
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +305,6 @@ GameObject:
   - component: {fileID: 882275874346517205}
   - component: {fileID: 882275874346517204}
   - component: {fileID: 882275874346517203}
-  - component: {fileID: 882275874346517202}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -420,17 +393,3 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &882275874346517202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 882275874346517200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a7db3beb5f431e4487e9a9e72d9f491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _textValue: {fileID: 882275873811261069}
-  _valueCube: {fileID: 882275874102559582}
