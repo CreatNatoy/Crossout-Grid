@@ -1,8 +1,15 @@
+
+![BannerCrossedGird](https://user-images.githubusercontent.com/76531899/192303712-4cab8897-15b2-42fd-87f9-0656d2cc263d.png)
+<p align="center">
+    <img src="https://img.shields.io/badge/Engine-2020.3.6f1-blueviolet" alt="Unity Version">
+    <img src="https://img.shields.io/badge/Version-0.1-blue" alt="Game Version">
+    <img src="https://img.shields.io/badge/License-None-success" alt="License">
+</p>
+
 # Crossout-Grid
+A small mathematical game where it was used design pattern MVC and Unity Events
 
-## The project: Crossout Grid
-
-### Make a simple game where:
+## Make a simple game where:
 * the game generates a grid 4x4 with values between 1 and 11.
 * the player can choose which cells to pick to collect 21 points.
 * Ex: picking 3 cells with 3, 7, and 11 gives the player 21 points.
@@ -12,14 +19,10 @@
 the game finishes when the player scores 60 points.
 * The whole project can be made using only UI components.
 
+## Developer
 
-### Requirements:
-* Singletons are not allowed.
-* Avoid using too many GetComponents.
-* Separate logic from displaying - very simplistic MVC.
-* Consider using Unity Events.
+- [CreatNatoy](https://github.com/CreatNatoy)
 
-
+## Gameplay
 
 https://user-images.githubusercontent.com/76531899/167291999-ea901cf3-b812-4ff3-a8d3-908fc5d36df0.mp4
-
