@@ -15,15 +15,9 @@ public class CubeView : MonoBehaviour, ICubeView
 
     public Button ButtonClick => _buttonClick; 
 
-    public void SetScore(Score score)
-    {
-        _score = score;
-    }
-
-    public void PrintCubeValue(int value)
-    {
-        _textValue.text = value.ToString();
-    }   
+    public void SetScore(Score score) => _score = score;
+    
+    public void PrintCubeValue(int value) => _textValue.text = value.ToString();
 
     public void ClickCube(int value)
     {

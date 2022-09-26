@@ -19,18 +19,18 @@ public class Spawn : MonoBehaviour
 
     private void SpawnCube()
     {
-        float center = GetCenter(_spacing, _size);
+        var center = GetCenter(_spacing, _size);
 
-        for (int i = 0; i < _size; i++)
+        for (var i = 0; i < _size; i++)
         {
-            float positionY = center + (i * _spacing);
+            var positionY = center + (i * _spacing);
 
-            for (int j = 0; j < _size; j++)
+            for (var j = 0; j < _size; j++)
             {
-                CubeView cube = CreateCube();
+                var cube = CreateCube();
 
-                float positionX = center + (j * _spacing);
-                Vector3 spawnPosition = new Vector3(positionX, positionY, transform.position.z);
+                var positionX = center + (j * _spacing);
+                var spawnPosition = new Vector3(positionX, positionY, transform.position.z);
                 cube.transform.localPosition = spawnPosition;
             }
         }
@@ -38,16 +38,16 @@ public class Spawn : MonoBehaviour
 
     private float GetCenter(float spacing, int size)
     {
-        float result = spacing * (size - 1);
+        var result = spacing * (size - 1);
         result = -result / 2;
         return result; 
     }
 
     private CubeView CreateCube()
     {
-        CubeModel model = new CubeModel();
+        var model = new CubeModel();
 
-        CubeView cube = Instantiate(_cube, transform);
+        var cube = Instantiate(_cube, transform);
 
         var controller = new CubeController(cube, model);
 
@@ -62,11 +62,9 @@ public class Spawn : MonoBehaviour
         return cube;
     }
 
-    private void OnDisable()
-    {
-        for (int i = 0; i < _cubeControllers.Count; i++)
-        {
-            _cubeControllers[i].Disable();
+    private void OnDisable() {
+        foreach (var cubeController in _cubeControllers) {
+            cubeController.Disable();
         }
     }
 }

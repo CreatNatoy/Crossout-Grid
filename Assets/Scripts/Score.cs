@@ -6,7 +6,8 @@ public class Score : MonoBehaviour
     [SerializeField] private TMP_Text _textScore; 
     [SerializeField] private TMP_Text _textCounterScore;
     [SerializeField] private FinishGame _finishGame;
-    [SerializeField] private int _finishScore = 60; 
+    [SerializeField] private int _finishScore = 60;
+    [SerializeField] private int _addScore = 21; 
 
     private int _currentScore = 0;
     private int _counterScore = 0;
@@ -15,11 +16,11 @@ public class Score : MonoBehaviour
     {
         _counterScore += score;
 
-        if ( _counterScore == 21)
+        if ( _counterScore == _addScore)
         {
             UpdateCurrentScore(_counterScore);
         }
-        else if( _counterScore > 21)
+        else if( _counterScore > _addScore)
         {
             UpdateCurrentScore( - _counterScore / 2); 
         }
